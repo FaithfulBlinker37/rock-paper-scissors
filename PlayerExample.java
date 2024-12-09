@@ -13,6 +13,8 @@ public class PlayerExample implements Player
     private static String name = "FaithfulBlinker37";
     /**
      * An example of a method - replace this comment with your own
+     * 
+     * 
      * You must create some kind of logic of what to play against your opponent...start thinking!
      * 
      * @return      the move you want to play against opponent
@@ -21,10 +23,10 @@ public class PlayerExample implements Player
      *              "s" - scissors
      *              anything else - forfeit the turn
      */
-    public String move(String [] myMoves, String [] opponentMoves, int myScore, int opponentScore)
-    {
-        return " ";
-    }
+    public String move(String[] myMoves, String[] opponentMoves, int myScore, int opponentScore) {
+        if (opponentMoves == null || opponentMoves.length == 0) {
+            return "r";
+        }
     /**
      * Returns the name of the player
      * 
