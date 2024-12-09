@@ -44,6 +44,11 @@ public class PlayerExample implements Player
             predictedMove = "s";
         }
 
+
+        if ("r".equals(predictedMove)) return "p"; 
+        if ("p".equals(predictedMove)) return "s"; 
+        return "r";
+    }
     /**
      * Returns the name of the player
      * 
