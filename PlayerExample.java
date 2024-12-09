@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class PlayerExample implements Player
 {
-    private static String name = "FaithfulBlinker37";
+    private static String name = "jonah blinker 37";
     /**
      * An example of a method - replace this comment with your own
      * 
