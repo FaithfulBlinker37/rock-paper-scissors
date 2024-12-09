@@ -8,7 +8,7 @@ import java.util.*;
  * You can create additional methods but must have the move method
  * 
  */
-public class PlayerExample implements Player
+public class SixthPeriodWangJonah implements Player
 {
     private static String name = "FaithfulBlinker37";
     /**
