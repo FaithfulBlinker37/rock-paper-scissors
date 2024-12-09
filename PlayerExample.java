@@ -27,6 +27,13 @@ public class PlayerExample implements Player
         if (opponentMoves == null || opponentMoves.length == 0) {
             return "r";
         }
+
+        int rockCount = 0, paperCount = 0, scissorsCount = 0;
+        for (String move : opponentMoves) {
+            if ("r".equals(move)) rockCount++;
+            else if ("p".equals(move)) paperCount++;
+            else if ("s".equals(move)) scissorsCount++;
+        }
     /**
      * Returns the name of the player
      * 
