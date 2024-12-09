@@ -34,6 +34,16 @@ public class PlayerExample implements Player
             else if ("p".equals(move)) paperCount++;
             else if ("s".equals(move)) scissorsCount++;
         }
+
+        String predictedMove;
+        if (rockCount >= paperCount && rockCount >= scissorsCount) {
+            predictedMove = "r";
+        } else if (paperCount >= rockCount && paperCount >= scissorsCount) {
+            predictedMove = "p";
+        } else {
+            predictedMove = "s";
+        }
+
     /**
      * Returns the name of the player
      * 
